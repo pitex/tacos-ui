@@ -17,5 +17,5 @@ steps:
       npm run build -- --prod
     displayName: 'Running npm install and build'
   - script: docker build -t $(dockerId)/$(imageName)  .
-  - script: docker login -u $(user) -p $(pswd) sicotin.azurecr.io
+  - script: docker login -u $(user) -p $(pswd) pitexangularmix.azurecr.io
   - script: docker push $(dockerId)/$(imageName)
