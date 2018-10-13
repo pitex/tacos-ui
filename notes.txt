@@ -1,0 +1,2 @@
+docker login --username <username from container registry> --password <password from container registry> <container registry URL>
+# password and username can be found in 'Access Keys' section of container registry details.
